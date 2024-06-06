@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "AvenirBlack";
+    src: url('fonts/AvenirBlack.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Avenir";
+    src: url('fonts/AvenirBook.ttf') format('truetype');
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+    overflow: hidden;
+}
+
+.clicker_background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    background-color: rgb(59, 59, 59);
+    background: radial-gradient(rgb(59, 59, 59), rgb(27, 27, 27));
+    border-width: 1vw;
+    border-right-style: double;
+    border-color: rgb(61, 61, 61);
+    overflow: hidden;
+}
+
+.upgrades {
+    position: absolute;
+    left: 30.97%;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    background-color: rgb(59, 59, 59);
+    background: radial-gradient(rgb(36, 36, 36), rgb(15, 15, 15));
+    border-width: 1vw;
+    border-right-style: double;
+    border-color: rgb(61, 61, 61);
+    overflow: hidden;
+}
+.upgrades .bars {
+    display: grid;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    width: 92%;
+    height: 95%;
+    grid-template-columns: auto;
+    align-content: start;
+    gap: 5%;
+}
+.bar {
+    width: 99%;
+    height: 15vh;
+    border-radius: 1vw;
+    background: radial-gradient(rgb(59, 59, 59), rgb(31, 31, 31));
+    border-width: 0.5%;
+    border-style: double;
+    border-color: rgb(61, 61, 61);
+    align-self: center;
+    overflow: hidden;
+}
+.bar .background_blocks {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    top: 80%;
+    image-rendering: pixelated;
+    background-size: 10%;
+    background-image: url("images/dirt.png");
+}
+.bar .tool {
+    position: relative;
+    height: 40%;
+    top: -110%;
+    left: 15%;
+    transform: rotate(135deg);
+    image-rendering: pixelated;
+}
+.bar .buy_background {
+    position: relative;
+    top: -20%;
+    width: 15%;
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+}
+
+.buttons {
+    position: absolute;
+    left: 71.96%;
+    top: 0;
+    height: 100%;
+    width: 28%;
+    background-color: rgb(59, 59, 59);
+    background: radial-gradient(rgb(36, 36, 36), rgb(15, 15, 15));
+    overflow: hidden;
+}
+.buttons .items {
+    display: grid;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(15vh, 1fr));
+    align-content: start;
+    gap: 5%;
+}
+.item {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 1vw;
+    background: radial-gradient(rgb(59, 59, 59), rgb(31, 31, 31));
+    border-width: 0.5%;
+    border-style: double;
+    border-color: rgb(61, 61, 61);
+    align-self: center;
+}
+.item .icon {
+    position: relative;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    image-rendering: pixelated;
+}
+.upgrades_ {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    left: 0;
+    width: 100%;
+    top: 3.5%;
+    text-align: center;
+    font-family: AvenirBlack;
+}
+.upgrades_chain1 {
+    position: absolute;
+    top: 0;
+    width: 15%;
+    left: 10%;
+    image-rendering: pixelated;
+}
+.upgrades_chain2 {
+    position: absolute;
+    top: 0;
+    width: 15%;
+    left: 75%;
+    image-rendering: pixelated;
+}
+.upgrades_sign {
+    position: absolute;
+    top: 2%;
+    width: 80%;
+    left: 10%;
+    image-rendering: pixelated;
+}
+
+.leaves {
+    image-rendering: pixelated;
+}
+
+#particles {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.clicker_image {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    image-rendering: pixelated;
+    transform: translate(-50%, -50%) rotate(10deg);
+    transition: width 100ms, height 100ms, transform 10ms;
+}
+
+.clicker_image:hover {
+    width: 10.5vw;
+    height: 10.5vw;
+}
+
+#clicked {
+    width: 12vw;
+    height: 12vw;
+}
+
+.gems_chain1 {
+    position: absolute;
+    top: 0;
+    height: 10%;
+    left: 40%;
+    image-rendering: pixelated;
+    transform: translate(-50%, 0);
+}
+.gems_chain2 {
+    position: absolute;
+    top: 0;
+    height: 10%;
+    left: 60%;
+    image-rendering: pixelated;
+    transform: translate(-50%, 0);
+}
+.gems_sign {
+    position: absolute;
+    top: 8.5%;
+    width: 40%;
+    left: 50%;
+    image-rendering: pixelated;
+    transform: translate(-50%, 0);
+}
+#gems {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    left: 0;
+    width: 100%;
+    top: 10.5%;
+    text-align: center;
+    font-family: AvenirBlack;
+}

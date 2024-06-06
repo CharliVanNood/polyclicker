@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyClicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clicker_background">
+        <canvas id="particles"></canvas>
+
+        <img class="gems_chain1" src="images/chain.png">
+        <img class="gems_chain2" src="images/chain.png">
+        <img class="gems_sign" src="images/sign1.png">
+
+        <img class="leaves" src="images/leaves1.png" style="position: absolute; top: 85%; left: 75%; width: 18vh; height: 18vh; transform: rotate(30deg);">
+        <img class="leaves" src="images/leaves3.png" style="position: absolute; top: 75%; left: 83%; width: 14vh; height: 14vh; transform: rotate(70deg);">
+        <img class="leaves" src="images/leaves1.png" style="position: absolute; top: 85%; left: 60%; width: 14vh; height: 14vh; transform: rotate(20deg);">
+        <img class="leaves" src="images/leaves3.png" style="position: absolute; top: 90%; left: 65%; width: 16vh; height: 16vh; transform: rotate(60deg);">
+        <img class="leaves" src="images/leaves1.png" style="position: absolute; top: 78%; left: 70%; width: 6vh; height: 6vh; transform: rotate(10deg);">
+
+        <img class="leaves" src="images/leaves1.png" style="position: absolute; top: -5%; left: -5%; width: 18vh; height: 18vh; transform: rotate(30deg);">
+        <img class="leaves" src="images/leaves3.png" style="position: absolute; top: 5%; left: -5%; width: 14vh; height: 14vh; transform: rotate(70deg);">
+        <img class="leaves" src="images/leaves1.png" style="position: absolute; top: 2%; left: 5%; width: 14vh; height: 14vh; transform: rotate(20deg);">
+        <img class="leaves" src="images/leaves3.png" style="position: absolute; top: -5%; left: 20%; width: 16vh; height: 16vh; transform: rotate(60deg);">
+        <img class="leaves" src="images/leaves1.png" style="position: absolute; top: -2%; left: 35%; width: 8vh; height: 8vh; transform: rotate(10deg);">
+
+        <img class="clicker_image" id="not_clicked" src="images/dirt.png">
+
+        <div id="gems">0</div>
+    </div>
+    <div class="upgrades">
+        <div class="bars">
+            <div class="bar">
+                <div class="background_blocks"></div>
+                <div class="buy_background"></div>
+                <img class="tool" src="images/trowel.png">
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <img class="upgrades_chain1" src="images/chain.png">
+        <img class="upgrades_chain2" src="images/chain.png">
+        <img class="upgrades_sign" src="images/sign2.png">
+        <div class="upgrades_">UPGRADES</div>
+        <div class="items">
+            <div class="item">
+                <img class="icon" src="images/trowel.png">
+            </div>
+            <div class="item">
+                <img class="icon" src="images/shovel.png">
+            </div>
+            <div class="item">
+                <img class="icon" src="images/pot1.png">
+            </div>
+        </div>
+
+        <img class="leaves" src="images/leaves3.png" style="position: absolute; top: 85%; left: -7%; width: 18vh; height: 18vh; transform: rotate(70deg);">
+        <img class="leaves" src="images/leaves1.png" style="position: absolute; top: 90%; left: 35%; width: 14vh; height: 14vh; transform: rotate(30deg);">
+        <img class="leaves" src="images/leaves1.png" style="position: absolute; top: 85%; left: 20%; width: 14vh; height: 14vh; transform: rotate(80deg);">
+        <img class="leaves" src="images/leaves3.png" style="position: absolute; top: 90%; left: 15%; width: 16vh; height: 16vh; transform: rotate(20deg);">
+        <img class="leaves" src="images/leaves1.png" style="position: absolute; top: 78%; left: 0%; width: 10vh; height: 10vh; transform: rotate(90deg);">
+        <img class="leaves" src="images/leaves3.png" style="position: absolute; top: 95%; left: 45%; width: 10vh; height: 10vh; transform: rotate(90deg);">
+    </div>
+
+    <script src="particles.js"></script>
+    <script src="animations.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

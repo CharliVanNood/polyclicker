@@ -30,7 +30,7 @@ function load() {
             } else if (upgrade == "shovelSpeed") {
                 let new_price = 500 * (1.75 ** upgrades[upgrade])
                 if (upgrades[upgrade] < 5) document.getElementById("priceButton1").innerHTML = "$" + Math.round(new_price * 10) / 10
-                else document.getElementById("buy_price1").innerHTML = "MAX"
+                else document.getElementById("priceButton1").innerHTML = "MAX"
             }
             console.log("loaded " + upgrade + " with value " + upgrade_loaded)
         }

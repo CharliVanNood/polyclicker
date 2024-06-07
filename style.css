@@ -186,6 +186,15 @@ body {
     image-rendering: pixelated;
     cursor: pointer;
 }
+.item .iconButton1 {
+    position: relative;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    image-rendering: pixelated;
+    cursor: pointer;
+}
 .item .text {
     position: relative;
     color: rgb(211, 211, 211);

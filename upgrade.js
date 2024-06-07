@@ -19,8 +19,36 @@ function BuyExtraSpeedShovel() {
     let price = 500 * (1.75 ** upgrades["shovelSpeed"])
     if (gems >= price && upgrades["shovelSpeed"] < 5) {
         upgrades["shovelSpeed"] += 0.5
+        console.log(upgrades["shovelSpeed"])
         gems -= price
+        switch (upgrades["shovelSpeed"]) {
+            case 1.5:
+                document.getElementsByClassName("iconButton1")[0].src = "images/stone_trowel.png"
+            break;
+            case 2:
+                document.getElementsByClassName("iconButton1")[0].src = "images/iron_trowel.png"
+            break;
+            case 2.5:
+                document.getElementsByClassName("iconButton1")[0].src = "images/bronze_trowel.png"
+            break;
+            case 3:
+                document.getElementsByClassName("iconButton1")[0].src = "images/steel_trowel.png"
+            break;
+            case 3.5:
+                document.getElementsByClassName("iconButton1")[0].src = "images/golden_trowel.png"
+            break;
+            case 4:
+                document.getElementsByClassName("iconButton1")[0].src = "images/obsidian_trowel.png"
+            break;
+            case 4.5:
+                document.getElementsByClassName("iconButton1")[0].src = "images/amethyst_trowel.png"
+            break;
+            case 5:
+                document.getElementsByClassName("iconButton1")[0].src = "images/emerald_trowel.png"
+            break;
+        }
         let  new_price = 500 * (1.75 ** upgrades["shovelSpeed"])
-        document.getElementById("priceButton1").innerHTML = "$" + Math.round(new_price * 10) / 10
+        if (upgrades["shovelSpeed"] < 5) document.getElementById("priceButton1").innerHTML = "$" + Math.round(new_price * 10) / 10
+        else document.getElementById("priceButton1").innerHTML = "MAX"
     }
 }

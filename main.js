@@ -14,6 +14,7 @@ clicker.addEventListener("click", e => {
 function run() {
     RotateClicker()
     UpdateLeaves()
+    UpdateMines()
     DrawParticles()
     if (clicked && clickedFrame <= 0) {
         document.getElementById("clicked").id = "not_clicked"

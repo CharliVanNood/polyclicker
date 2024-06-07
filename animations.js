@@ -1,4 +1,5 @@
 clickerRotation = 10
+mineIndex = 0
 
 leaves = document.getElementsByClassName("leaves")
 leafPositions = []
@@ -29,4 +30,19 @@ function UpdateLeaves() {
         leafPositions[leaf_][2].style.left = Math.cos(clickerRotation / 5 + leafPositions[leaf_][0]) / 5 + leafPositions[leaf_][0] + "%"
         leafPositions[leaf_][2].style.top = Math.cos(clickerRotation / 5 + leafPositions[leaf_][1]) / 5 + leafPositions[leaf_][1] + "%"
     }
+}
+
+function updateMine1() {
+    let index_ = Math.floor(mineIndex / 10) % 9 + 1
+    if (mineIndex > 10) {
+        let toolOld = document.getElementById("shovelTool" + ((Math.floor(mineIndex / 10) - 1) % 9 + 1))
+        toolOld.style.top = "5%"
+    }
+    let tool = document.getElementById("shovelTool" + index_)
+    tool.style.top = "50%"
+}
+
+function UpdateMines() {
+    updateMine1()
+    mineIndex += 1
 }

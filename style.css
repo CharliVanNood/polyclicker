@@ -70,13 +70,42 @@ body {
     background-size: 10%;
     background-image: url("images/dirt.png");
 }
-.bar .tool {
+.bar .tools {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    top: -120%;
+    left: 15%;
+    image-rendering: pixelated;
+}
+.bar .signs {
+    position: relative;
+    left: 2.5%;
+    top: -20%;
+    height: 100%;
+    width: 15%;
+}
+.bar .signs .buy_tool1 {
+    position: relative;
+    left: 2.5%;
+    top: 10%;
+    height: 35%;
+    image-rendering: pixelated;
+}
+.bar .signs .buy_tool2 {
+    position: relative;
+    top: 0%;
+    height: 35%;
+    image-rendering: pixelated;
+}
+.bar .tools .tool {
     position: relative;
     height: 40%;
-    top: -110%;
-    left: 15%;
+    top: 5%;
+    left: 5%;
     transform: rotate(135deg);
     image-rendering: pixelated;
+    transition: top 150ms;
 }
 .bar .buy_background {
     position: relative;

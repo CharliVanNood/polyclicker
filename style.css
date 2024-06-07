@@ -10,6 +10,9 @@
 body {
     background-color: rgb(10, 10, 10);
     overflow: hidden;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .clicker_background {
@@ -69,8 +72,9 @@ body {
     image-rendering: pixelated;
     background-size: 10%;
     background-image: url("images/dirt.png");
+    z-index: 2;
 }
-.bar .tools {
+.bar .tools1 {
     position: relative;
     width: 85%;
     height: 100%;
@@ -92,6 +96,7 @@ body {
     height: 35%;
     width: 100%;
     image-rendering: pixelated;
+    cursor: pointer;
 }
 .bar .signs .buy_tool2 {
     position: relative;
@@ -99,6 +104,7 @@ body {
     height: 35%;
     width: 100%;
     image-rendering: pixelated;
+    cursor: pointer;
 }
 .bar .signs .buy_text {
     position: absolute;
@@ -109,8 +115,9 @@ body {
     top: 25%;
     text-align: center;
     font-family: AvenirBlack;
+    cursor: pointer;
 }
-.bar .signs #buy_price {
+.bar .signs #buy_price1 {
     position: absolute;
     color: white;
     font-size: 1vw;
@@ -119,8 +126,9 @@ body {
     top: 45%;
     text-align: center;
     font-family: AvenirBlack;
+    cursor: pointer;
 }
-.bar .tools .tool {
+.bar .tools1 .tool {
     position: relative;
     height: 40%;
     top: 5%;
@@ -185,6 +193,7 @@ body {
     top: 3.5%;
     text-align: center;
     font-family: AvenirBlack;
+    cursor: default;
 }
 .upgrades_chain1 {
     position: absolute;
@@ -276,4 +285,5 @@ body {
     top: 10.5%;
     text-align: center;
     font-family: AvenirBlack;
+    cursor: default;
 }

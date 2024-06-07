@@ -35,14 +35,12 @@
             <div class="bar">
                 <div class="background_blocks"></div>
                 <div class="signs">
-                    <img class="buy_tool1" src="images/sign1.png">
-                    <img class="buy_tool2" src="images/sign1.png">
-                    <div class="buy_text">+1 Shovel</div>
-                    <div id="buy_price">$100</div>
+                    <img class="buy_tool1" src="images/sign1.png" onclick="BuyExtraShovel()">
+                    <img class="buy_tool2" src="images/sign1.png" onclick="BuyExtraShovel()">
+                    <div class="buy_text" onclick="BuyExtraShovel()">+1 Trowel</div>
+                    <div id="buy_price1" onclick="BuyExtraShovel()">$100</div>
                 </div>
-                <div class="tools">
-                    <img class="tool" id="shovelTool1" src="images/trowel.png">
-                </div>
+                <div class="tools1"></div>
             </div>
         </div>
     </div>
@@ -72,6 +70,7 @@
     </div>
 
     <script src="particles.js"></script>
+    <script src="upgrade.js"></script>
     <script src="animations.js"></script>
     <script src="main.js"></script>
 </body>

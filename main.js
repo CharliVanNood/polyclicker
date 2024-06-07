@@ -21,7 +21,7 @@ function run() {
         clicked = false
     }
     clickedFrame -= 1
-    gemsLabel.innerHTML = gems
+    gemsLabel.innerHTML = Math.round(gems * 10) / 10
 }
 
 setInterval(run, 16.66)

@@ -184,6 +184,28 @@ body {
     height: 80%;
     image-rendering: pixelated;
 }
+.item .text {
+    position: relative;
+    color: rgb(211, 211, 211);
+    font-size: 0.8vw;
+    left: 0;
+    width: 100%;
+    top: -2%;
+    text-align: center;
+    font-family: AvenirBlack;
+    cursor: default;
+}
+.item #priceButton1 {
+    position: relative;
+    color: rgb(211, 211, 211);
+    font-size: 0.8vw;
+    left: 0;
+    width: 100%;
+    top: -98%;
+    text-align: center;
+    font-family: AvenirBlack;
+    cursor: default;
+}
 .upgrades_ {
     position: absolute;
     color: white;

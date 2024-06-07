@@ -1,5 +1,6 @@
 var upgrades = {
-    "shovels": 0
+    "shovels": 0,
+    "shovelSpeed": 1
 }
 
 function BuyExtraShovel() {
@@ -11,5 +12,15 @@ function BuyExtraShovel() {
         let new_price = 100 * (1.2 ** upgrades["shovels"])
         if (upgrades["shovels"] < 9) document.getElementById("buy_price1").innerHTML = "$" + Math.round(new_price * 10) / 10
         else document.getElementById("buy_price1").innerHTML = "MAX"
+    }
+}
+
+function BuyExtraSpeedShovel() {
+    let price = 500 * (1.75 ** upgrades["shovelSpeed"])
+    if (gems >= price && upgrades["shovelSpeed"] < 5) {
+        upgrades["shovelSpeed"] += 0.5
+        gems -= price
+        let  new_price = 500 * (2 ** upgrades["shovelSpeed"])
+        document.getElementById("priceButton1").innerHTML = "$" + new_price
     }
 }

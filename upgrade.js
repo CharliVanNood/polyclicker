@@ -9,6 +9,7 @@ function BuyExtraShovel() {
         gems -= price
         document.getElementsByClassName("tools1")[0].innerHTML += '<img class="tool" id="shovelTool' + upgrades["shovels"] + '" src="images/trowel.png">'
         let new_price = 100 * (1.2 ** upgrades["shovels"])
-        document.getElementById("buy_price1").innerHTML = "$" + Math.round(new_price * 10) / 10
+        if (upgrades["shovels"] < 9) document.getElementById("buy_price1").innerHTML = "$" + Math.round(new_price * 10) / 10
+        else document.getElementById("buy_price1").innerHTML = "MAX"
     }
 }

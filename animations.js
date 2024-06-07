@@ -33,11 +33,17 @@ function UpdateLeaves() {
 }
 
 function updateMine1() {
+    let index_last = (Math.floor(mineIndex / 10) - 1) % 9 + 1
     let index_ = Math.floor(mineIndex / 10) % 9 + 1
-    let toolOld = document.getElementById("shovelTool" + ((Math.floor(mineIndex / 10) - 1) % 9 + 1))
+    let toolOld = document.getElementById("shovelTool" + index_last)
     if (toolOld) toolOld.style.top = "5%"
     let tool = document.getElementById("shovelTool" + index_)
-    if (tool) tool.style.top = "50%"
+    if (tool) {
+        tool.style.top = "50%"
+        if (index_ != Math.floor((mineIndex - 1) / 10) % 9 + 1) {
+            gems += 1
+        }
+    }
 }
 
 function UpdateMines() {

@@ -90,13 +90,35 @@ body {
     left: 2.5%;
     top: 10%;
     height: 35%;
+    width: 100%;
     image-rendering: pixelated;
 }
 .bar .signs .buy_tool2 {
     position: relative;
     top: 0%;
     height: 35%;
+    width: 100%;
     image-rendering: pixelated;
+}
+.bar .signs .buy_text {
+    position: absolute;
+    color: white;
+    font-size: 0.8vw;
+    left: 0;
+    width: 100%;
+    top: 25%;
+    text-align: center;
+    font-family: AvenirBlack;
+}
+.bar .signs #buy_price {
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    left: 0;
+    width: 100%;
+    top: 45%;
+    text-align: center;
+    font-family: AvenirBlack;
 }
 .bar .tools .tool {
     position: relative;
@@ -182,6 +204,7 @@ body {
     position: absolute;
     top: 2%;
     width: 80%;
+    height: 11%;
     left: 10%;
     image-rendering: pixelated;
 }

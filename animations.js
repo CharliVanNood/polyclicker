@@ -34,12 +34,10 @@ function UpdateLeaves() {
 
 function updateMine1() {
     let index_ = Math.floor(mineIndex / 10) % 9 + 1
-    if (mineIndex > 10) {
-        let toolOld = document.getElementById("shovelTool" + ((Math.floor(mineIndex / 10) - 1) % 9 + 1))
-        toolOld.style.top = "5%"
-    }
+    let toolOld = document.getElementById("shovelTool" + ((Math.floor(mineIndex / 10) - 1) % 9 + 1))
+    if (toolOld) toolOld.style.top = "5%"
     let tool = document.getElementById("shovelTool" + index_)
-    tool.style.top = "50%"
+    if (tool) tool.style.top = "50%"
 }
 
 function UpdateMines() {

@@ -20,7 +20,7 @@ function BuyExtraSpeedShovel() {
     if (gems >= price && upgrades["shovelSpeed"] < 5) {
         upgrades["shovelSpeed"] += 0.5
         gems -= price
-        let  new_price = 500 * (2 ** upgrades["shovelSpeed"])
-        document.getElementById("priceButton1").innerHTML = "$" + new_price
+        let  new_price = 500 * (1.75 ** upgrades["shovelSpeed"])
+        document.getElementById("priceButton1").innerHTML = "$" + Math.round(new_price * 10) / 10
     }
 }

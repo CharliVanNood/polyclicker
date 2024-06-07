@@ -175,6 +175,7 @@ body {
     border-style: double;
     border-color: rgb(61, 61, 61);
     align-self: center;
+    cursor: pointer;
 }
 .item .icon {
     position: relative;
@@ -183,6 +184,7 @@ body {
     width: 80%;
     height: 80%;
     image-rendering: pixelated;
+    cursor: pointer;
 }
 .item .text {
     position: relative;
@@ -193,7 +195,7 @@ body {
     top: -2%;
     text-align: center;
     font-family: AvenirBlack;
-    cursor: default;
+    cursor: pointer;
 }
 .item #priceButton1 {
     position: relative;
@@ -204,7 +206,7 @@ body {
     top: -98%;
     text-align: center;
     font-family: AvenirBlack;
-    cursor: default;
+    cursor: pointer;
 }
 .upgrades_ {
     position: absolute;

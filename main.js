@@ -6,10 +6,14 @@ var clicked = false
 
 var gems = 0
 
+var saveInterval = 600
+
 clicker.addEventListener("click", e => {
     clickedClicker()
     clickedFrame = 5
 })
+
+load()
 
 function run() {
     RotateClicker()
@@ -22,6 +26,11 @@ function run() {
     }
     clickedFrame -= 1
     gemsLabel.innerHTML = Math.floor(gems)
+    if (saveInterval <= 0) {
+        save()
+        saveInterval = 600
+    }
+    saveInterval -= 1
 }
 
 setInterval(run, 16.66)

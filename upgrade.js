@@ -1,4 +1,4 @@
-upgrades = {
+var upgrades = {
     "shovels": 0
 }
 
